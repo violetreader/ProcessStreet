@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp" ng-controller="myCtrl"> 
+<html lang="en" ng-app="myApp"> 
 <head>
 
 
@@ -7,22 +7,29 @@
 <body>
 
 <div>
-	{{4 + 6}}
+	{{4 + 5}}
 </div>
 
-<div>
-{{ firstName + " " + lastName }}
-</div>
+<greet-user></greet-user>	
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
 <script>
-var app = angular.module("myApp", []);
-app.controller("myCtrl", function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
-});
+angular.module("myApp", []);
+
+angular.
+  module('myApp').
+  component('greetUser', {
+    template: 'Hello, {{$ctrl.today}}!',
+    controller: function GreetUserController() {
+      this.today = 'Tuesday';
+    }
+  });
 </script>
 
 </body>
 </html>
+
+

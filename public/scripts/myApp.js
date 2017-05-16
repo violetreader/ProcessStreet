@@ -1,7 +1,7 @@
-const angular = require("angular.min.js");
+const angular = require("https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js");
 
-const app = angular.module("myApp", []);
-
-app.controller("myController", function($scope) {
-	$scope.message = "rainin";
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
 });
