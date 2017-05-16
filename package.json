@@ -1,0 +1,26 @@
+{
+  "name": "process_street",
+  "version": "1.0.0",
+  "description": "building an app where users can upload videos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/violetreader/ProcessStreet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/violetreader/ProcessStreet/issues"
+  },
+  "homepage": "https://github.com/violetreader/ProcessStreet#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "jquery": "^3.2.1"
+  }
+}
